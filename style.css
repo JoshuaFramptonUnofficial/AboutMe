@@ -45,6 +45,14 @@ html.smooth-scroll {
     0 0 20px var(--primary-green);
   animation: pulse 2s infinite;
 }
+
+@media (max-width: 767px) {
+  .glow {
+    text-shadow: none;
+    animation: none;
+  }
+}
+
 @keyframes pulse {
   0%, 100% {
     text-shadow:
@@ -59,24 +67,3 @@ html.smooth-scroll {
       0 0 30px var(--primary-green);
   }
 }
-
-/* ==================== Animated Gradient Background: Optional ====================
-   Apply the "gradient-bg" class to a section (e.g. #projects) to enable a slow-moving
-   gradient. Remove or comment out this entire block if you don’t want it.
-=================================================================================== */
-.gradient-bg {
-  background: linear-gradient(
-    45deg,
-    rgba(15,157,88,0.2),
-    rgba(0,0,0,0.8),
-    rgba(15,157,88,0.2)
-  );
-  background-size: 400% 400%;
-  animation: gradientMove 20s ease infinite;
-}
-@keyframes gradientMove {
-  0% { background-position:   0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position:   0% 50%; }
-}
-/* ==================== End Animated Gradient Background Block ==================== */
