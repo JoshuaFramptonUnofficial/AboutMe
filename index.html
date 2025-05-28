@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Professional Portfolio</title>
-  <!-- Tailwind CSS via CDN -->
+  <title>Joshua Frampton Tripp | Cybersecurity Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <!-- AOS animations -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Font Awesome icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <!-- Custom styles -->
+  <!-- Your custom styles -->
   <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-black text-white">
@@ -26,17 +29,23 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section id="hero" class="h-screen flex flex-col items-center justify-center text-center px-4" data-aos="fade-up">
-    <img src="joshua.png" alt="Joshua Photo" class="w-40 h-40 rounded-full mb-6 shadow-lg">
-    <h1 class="text-5xl font-bold mb-2">Joshua Frampton Tripp</h1>
-    <p class="text-xl mb-4">Cybersecurity Enthusiast & A-Level Computer Science Student</p>
-    <a href="#contact" class="btn-custom"><i class="fas fa-paper-plane mr-2"></i>Get in touch</a>
+  <!-- HERO with particle network -->
+  <section id="hero" class="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+    <!-- Particle canvas (behind content) -->
+    <div id="tsparticles" class="absolute inset-0 z-0"></div>
+
+    <!-- Hero content -->
+    <div class="relative z-10">
+      <img src="joshua.png" alt="Joshua Photo" class="w-40 h-40 rounded-full mb-6 shadow-lg mx-auto">
+      <h1 class="text-5xl font-bold mb-2 glow hero-name">Joshua Frampton Tripp</h1>
+      <p class="text-xl mb-4">Cybersecurity Enthusiast & A-Level Computer Science Student</p>
+      <a href="#contact" class="btn-custom glow"><i class="fas fa-paper-plane mr-2"></i>Get in touch</a>
+    </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="py-20 px-6 max-w-3xl mx-auto" data-aos="fade-right">
-    <h2 class="text-4xl font-semibold mb-4">About Me</h2>
+    <h2 class="text-4xl font-semibold mb-4 glow section-title">About Me</h2>
     <p class="leading-relaxed">
       I’m currently nearing the end of sixth form, and looking for an apprenticeship to start my career in IT. I have a keen interest in IT and hope to specialize in Cyber Security.
       I’m a hard-working, resilient and honest individual. I am skilled in communication and leadership, and teamwork. I’m charismatic, creative and technically capable.
@@ -45,29 +54,30 @@
 
   <!-- SKILLS -->
   <section id="skills" class="py-20 bg-green-900 bg-opacity-20 px-6" data-aos="fade-left">
-    <h2 class="text-4xl font-semibold text-center mb-12">Key Skills</h2>
+    <h2 class="text-4xl font-semibold text-center mb-12 glow section-title">Key Skills</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
       <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in">
-        <i class="fa fa-fw fa-user text-3xl mb-4 text-green-400"></i>
+        <i class="fas fa-user text-3xl mb-4 text-green-400"></i>
         <h3 class="text-2xl font-bold mb-2">Leadership</h3>
         <p>I have led an Alpha Group, organised and hosted a college residential and earned the Stell Marris Gold leadership Award</p>
       </div>
       <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
-        <i class="fa fa-fw fa-code text-3xl mb-4 text-green-400"></i>
+        <i class="fas fa-code text-3xl mb-4 text-green-400"></i>
         <h3 class="text-2xl font-bold mb-2">Programming</h3>
         <p>Capable at using C#, CSS, JavaScript, Linux Terminal & HTML</p>
       </div>
       <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
-        <i class="fa fa-fw fa-laptop text-3xl mb-4 text-green-400"></i>
-        <h3 class="text-2xl font-bold mb-2">Computer Hardware and building</h3>
-        <p>I have built several desktop computers and operate a custom built Rasberry Pi</p>
+        <i class="fas fa-laptop text-3xl mb-4 text-green-400"></i>
+        <h3 class="text-2xl font-bold mb-2">Computer Hardware & Building</h3>
+        <p>I have built several desktop computers and operate a custom built Raspberry Pi</p>
       </div>
     </div>
   </section>
 
-   <!-- PROJECTS -->
-  <section id="projects" class="py-20 px-6 max-w-5xl mx-auto" data-aos="fade-up">
-    <h2 class="text-4xl font-semibold text-center mb-12">Selected Projects</h2>
+  <!-- PROJECTS -->
+  <!-- Optional animated gradient: add/remove "gradient-bg" class below to toggle -->
+  <section id="projects" class="py-20 px-6 max-w-5xl mx-auto gradient-bg" data-aos="fade-up">
+    <h2 class="text-4xl font-semibold text-center mb-12 glow section-title">Selected Projects</h2>
     <div class="space-y-8">
       <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md" data-aos="flip-left">
         <h3 class="text-2xl font-bold mb-2">
@@ -76,24 +86,24 @@
           </a>
         </h3>
         <p>Built a web-app using HTML, JavaScript and CSS designed to help bus users know when 
-          to get off the bus, to prevent missing the bus stop.</p>
+           to get off the bus, to prevent missing the bus stop.</p>
       </div>
       <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md" data-aos="flip-left" data-aos-delay="100">
-        <h3 class="text-2xl font-bold mb-2">Photoprism Server | Rasberry Pi NAS</h3>
-        <p>Built a Rasberry pi from various parts and setup a Photo NAS using the open-source PhotoPrismPI 
-          linux distro to avoid privacy issues with Google Photos</p>
+        <h3 class="text-2xl font-bold mb-2">Photoprism Server | Raspberry Pi NAS</h3>
+        <p>Built a Raspberry Pi from various parts and setup a Photo NAS using the open-source PhotoPrismPI 
+           linux distro to avoid privacy issues with Google Photos</p>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="py-20 bg-green-900 bg-opacity-20 px-6" data-aos="fade-right">
-    <h2 class="text-4xl font-semibold text-center mb-8">Get In Touch</h2>
+    <h2 class="text-4xl font-semibold text-center mb-8 glow section-title">Get In Touch</h2>
     <form class="max-w-xl mx-auto space-y-4">
       <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-black bg-opacity-50 focus:outline-none" required>
       <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-black bg-opacity-50 focus:outline-none" required>
       <textarea rows="5" placeholder="Message…" class="w-full p-3 rounded-lg bg-black bg-opacity-50 focus:outline-none" required></textarea>
-      <button type="submit" class="btn-custom w-full text-center"><i class="fas fa-paper-plane mr-2"></i>Send Message</button>
+      <button type="submit" class="btn-custom glow w-full text-center"><i class="fas fa-paper-plane mr-2"></i>Send Message</button>
     </form>
   </section>
 
@@ -102,7 +112,8 @@
     <p>© 2025 Joshua. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts -->
+  <!-- Scripts: tsParticles for the hero, AOS for scroll animations, then your JS -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
