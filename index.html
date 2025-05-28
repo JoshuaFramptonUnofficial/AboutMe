@@ -38,8 +38,9 @@
     <div class="relative z-10">
       <img src="joshua.png" alt="Joshua Photo" class="w-40 h-40 rounded-full mb-6 shadow-lg mx-auto">
       <h1 class="text-5xl font-bold mb-2 glow hero-name">Joshua Frampton Tripp</h1>
-      <p class="text-xl mb-4">Cybersecurity Enthusiast & A-Level Computer Science Student</p>
-      <a href="#contact" class="btn-custom glow"><i class="fas fa-paper-plane mr-2"></i>Get in touch</a>
+      <p class="text-xl mb-4">Cybersecurity Enthusiast &amp; A-Level Computer Science Student</p>
+      <!-- Removed glow on button so text remains white -->
+      <a href="#contact" class="btn-custom"><i class="fas fa-paper-plane mr-2"></i>Get in touch</a>
     </div>
   </section>
 
@@ -59,24 +60,23 @@
       <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in">
         <i class="fas fa-user text-3xl mb-4 text-green-400"></i>
         <h3 class="text-2xl font-bold mb-2">Leadership</h3>
-        <p>I have led an Alpha Group, organised and hosted a college residential and earned the Stell Marris Gold leadership Award</p>
+        <p>I have led an Alpha Group, organised and hosted a college residential and earned the Stell Marris Gold leadership Award.</p>
       </div>
       <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
         <i class="fas fa-code text-3xl mb-4 text-green-400"></i>
         <h3 class="text-2xl font-bold mb-2">Programming</h3>
-        <p>Capable at using C#, CSS, JavaScript, Linux Terminal & HTML</p>
+        <p>Capable at using C#, CSS, JavaScript, Linux Terminal &amp; HTML.</p>
       </div>
       <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
         <i class="fas fa-laptop text-3xl mb-4 text-green-400"></i>
-        <h3 class="text-2xl font-bold mb-2">Computer Hardware & Building</h3>
-        <p>I have built several desktop computers and operate a custom built Raspberry Pi</p>
+        <h3 class="text-2xl font-bold mb-2">Computer Hardware &amp; Building</h3>
+        <p>I have built several desktop computers and operate a custom-built Raspberry Pi.</p>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <!-- Optional animated gradient: add/remove "gradient-bg" class below to toggle -->
-  <section id="projects" class="py-20 px-6 max-w-5xl mx-auto gradient-bg" data-aos="fade-up">
+  <!-- PROJECTS (no gradient) -->
+  <section id="projects" class="py-20 px-6 max-w-5xl mx-auto" data-aos="fade-up">
     <h2 class="text-4xl font-semibold text-center mb-12 glow section-title">Selected Projects</h2>
     <div class="space-y-8">
       <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md" data-aos="flip-left">
@@ -85,13 +85,11 @@
             BusBeep | Computer Science NEA Project
           </a>
         </h3>
-        <p>Built a web-app using HTML, JavaScript and CSS designed to help bus users know when 
-           to get off the bus, to prevent missing the bus stop.</p>
+        <p>Built a web-app using HTML, JavaScript and CSS designed to help bus users know when to get off the bus, preventing missed stops.</p>
       </div>
       <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md" data-aos="flip-left" data-aos-delay="100">
         <h3 class="text-2xl font-bold mb-2">Photoprism Server | Raspberry Pi NAS</h3>
-        <p>Built a Raspberry Pi from various parts and setup a Photo NAS using the open-source PhotoPrismPI 
-           linux distro to avoid privacy issues with Google Photos</p>
+        <p>Built a Raspberry Pi from various parts and set up a Photo NAS using the open-source PhotoPrismPI Linux distro to avoid Google Photos privacy issues.</p>
       </div>
     </div>
   </section>
@@ -99,12 +97,15 @@
   <!-- CONTACT -->
   <section id="contact" class="py-20 bg-green-900 bg-opacity-20 px-6" data-aos="fade-right">
     <h2 class="text-4xl font-semibold text-center mb-8 glow section-title">Get In Touch</h2>
-    <form class="max-w-xl mx-auto space-y-4">
-      <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-black bg-opacity-50 focus:outline-none" required>
-      <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-black bg-opacity-50 focus:outline-none" required>
-      <textarea rows="5" placeholder="Message…" class="w-full p-3 rounded-lg bg-black bg-opacity-50 focus:outline-none" required></textarea>
-      <button type="submit" class="btn-custom glow w-full text-center"><i class="fas fa-paper-plane mr-2"></i>Send Message</button>
-    </form>
+    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+      <!-- Replace PHONE_NUMBER and EMAIL_ADDRESS with your actual contact info -->
+      <a href="tel:PHONE_NUMBER" class="btn-custom w-full sm:w-auto text-center">
+        <i class="fas fa-phone mr-2"></i>Call Me
+      </a>
+      <a href="mailto:EMAIL_ADDRESS" class="btn-custom w-full sm:w-auto text-center">
+        <i class="fas fa-envelope mr-2"></i>Email Me
+      </a>
+    </div>
   </section>
 
   <!-- FOOTER -->
