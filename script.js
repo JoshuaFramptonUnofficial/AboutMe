@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Detect mobile to scale back particle count & interaction
   const isMobile = window.innerWidth < 768;
-  const particleCount = isMobile ? 50 : 150;
 
-  // Initialize tsParticles in the #tsparticles div
+  // More aggressive mobile reduction
+  const particleCount = isMobile ? 30 : 150;
+  const linkDistance = isMobile ? 100 : 150;
+  const moveSpeed   = isMobile ? 0.5 : 1;
+
   tsParticles.load("tsparticles", {
     fullScreen: { enable: false },
     fpsLimit: 60,
@@ -18,23 +20,21 @@ document.addEventListener("DOMContentLoaded", () => {
       size: { value: { min: 1, max: 3 } },
       links: {
         enable: true,
-        distance: 150,
+        distance: linkDistance,
         color: "#0f9d58",
         opacity: 0.4,
         width: 1
       },
       move: {
         enable: true,
-        speed: 1,
+        speed: moveSpeed,
         outModes: { default: "bounce" }
       }
     },
     interactivity: {
       events: {
-        onHover: {
-          enable: !isMobile,
-          mode: "attract"
-        },
+        // Disable hover attract on mobile
+        onHover: { enable: !isMobile, mode: "attract" },
         resize: true
       },
       modes: {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     detectRetina: true
   });
 
-  // Initialize AOS (scroll-triggered reveals)
+  // Scroll-triggered animations
   AOS.init({
     duration: 800,
     once: true
