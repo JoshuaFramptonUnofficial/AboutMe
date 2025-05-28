@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="smooth-scroll">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joshua’s Cybersecurity Portfolio</title>
+  <!-- Tailwind CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- AOS animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full bg-black bg-opacity-60 backdrop-blur p-4 z-50">
+    <ul class="flex justify-end space-x-6">
+      <li><a href="#hero" class="hover:text-green-400"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about" class="hover:text-green-400"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#skills" class="hover:text-green-400"><i class="fas fa-shield-alt"></i> Skills</a></li>
+      <li><a href="#projects" class="hover:text-green-400"><i class="fas fa-laptop-code"></i> Projects</a></li>
+      <li><a href="#contact" class="hover:text-green-400"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="h-screen flex flex-col items-center justify-center text-center px-4" data-aos="fade-up">
+    <img src="joshua.png" alt="Joshua Photo" class="w-40 h-40 rounded-full mb-6 shadow-lg">
+    <h1 class="text-5xl font-bold mb-2">Joshua [Your Last Name]</h1>
+    <p class="text-xl mb-4">Cybersecurity Enthusiast & A-Level Computer Science Student</p>
+    <a href="#contact" class="btn-custom"><i class="fas fa-paper-plane mr-2"></i>Let’s Talk</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 px-6 max-w-3xl mx-auto" data-aos="fade-right">
+    <h2 class="text-4xl font-semibold mb-4">About Me</h2>
+    <p class="leading-relaxed">
+      I’m a traditional, values-driven cybersecurity enthusiast currently pursuing A-Levels in Maths, Business, and Computer Science. 
+      I love dissecting systems, hunting vulnerabilities, and applying best-practice security principles the way they’ve always been intended—no shortcuts.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-20 bg-green-900 bg-opacity-20 px-6" data-aos="fade-left">
+    <h2 class="text-4xl font-semibold text-center mb-12">Skills</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in">
+        <i class="fas fa-network-wired text-3xl mb-4 text-green-400"></i>
+        <h3 class="text-2xl font-bold mb-2">Network Security</h3>
+        <p>Firewalls, IDS/IPS, secure architectures & traffic analysis.</p>
+      </div>
+      <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-user-secret text-3xl mb-4 text-green-400"></i>
+        <h3 class="text-2xl font-bold mb-2">Penetration Testing</h3>
+        <p>OWASP, Metasploit, Burp Suite & ethical hacking methodologies.</p>
+      </div>
+      <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-code text-3xl mb-4 text-green-400"></i>
+        <h3 class="text-2xl font-bold mb-2">Secure Coding</h3>
+        <p>Input validation, crypto best practices, code reviews & QA.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-20 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+    <h2 class="text-4xl font-semibold text-center mb-12">Selected Projects</h2>
+    <div class="space-y-8">
+      <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md" data-aos="flip-left">
+        <h3 class="text-2xl font-bold mb-2">Vulnerability Scanner</h3>
+        <p>Built a Python CLI tool that scans web servers for common CVEs and generates HTML reports.</p>
+      </div>
+      <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md" data-aos="flip-left" data-aos-delay="100">
+        <h3 class="text-2xl font-bold mb-2">Secure Chat App (Demo)</h3>
+        <p>Prototype of an end-to-end encrypted chat using WebSockets and RSA key exchange.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-green-900 bg-opacity-20 px-6" data-aos="fade-right">
+    <h2 class="text-4xl font-semibold text-center mb-8">Get In Touch</h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-black bg-opacity-50 focus:outline-none" required>
+      <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-black bg-opacity-50 focus:outline-none" required>
+      <textarea rows="5" placeholder="Message…" class="w-full p-3 rounded-lg bg-black bg-opacity-50 focus:outline-none" required></textarea>
+      <button type="submit" class="btn-custom w-full text-center"><i class="fas fa-paper-plane mr-2"></i>Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 text-center bg-black bg-opacity-70">
+    <p>© 2025 Joshua. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
