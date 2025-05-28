@@ -1,0 +1,36 @@
+:root {
+  --primary-green: #0f9d58;
+  --dark-bg: #000;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: #fff;
+}
+
+a {
+  color: var(--primary-green);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn-custom {
+  background-color: var(--primary-green);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #0c6f3f;
+}
+
+/* enable smooth scrolling on whole document */
+html.smooth-scroll {
+  scroll-behavior: smooth;
+}
