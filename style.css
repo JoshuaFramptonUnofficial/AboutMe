@@ -2,14 +2,11 @@
   --primary-green: #0f9d58;
   --dark-bg: #000;
 }
-
 body {
   background-color: var(--dark-bg);
   color: #fff;
   font-family: 'Montserrat', sans-serif;
 }
-
-/* Links */
 a {
   color: var(--primary-green);
   text-decoration: none;
@@ -17,8 +14,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-/* Buttons */
 .btn-custom {
   background-color: var(--primary-green);
   color: #fff;
@@ -30,13 +25,9 @@ a:hover {
 .btn-custom:hover {
   background-color: #0c6f3f;
 }
-
-/* Smooth scroll */
 html.smooth-scroll {
   scroll-behavior: smooth;
 }
-
-/* Neon glow effect for key text */
 .glow {
   color: var(--primary-green);
   text-shadow:
@@ -45,16 +36,14 @@ html.smooth-scroll {
     0 0 20px var(--primary-green);
   animation: pulse 2s infinite;
 }
-
 @media (max-width: 767px) {
   .glow {
     text-shadow: none;
     animation: none;
   }
 }
-
 @keyframes pulse {
-  0%, 100% {
+  0%,100% {
     text-shadow:
       0 0 5px var(--primary-green),
       0 0 10px var(--primary-green),
@@ -65,5 +54,38 @@ html.smooth-scroll {
       0 0 10px var(--primary-green),
       0 0 20px var(--primary-green),
       0 0 30px var(--primary-green);
+  }
+}
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: 10;
+  animation: fadeInIndicator 1s ease-out forwards, bob 2s ease-in-out infinite 1s;
+}
+@keyframes fadeInIndicator {
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes bob {
+  0%,100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+.hide {
+  animation: fadeOutIndicator 0.5s ease-out forwards;
+}
+@keyframes fadeOutIndicator {
+  to {
+    opacity: 0;
   }
 }

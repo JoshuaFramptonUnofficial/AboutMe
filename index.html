@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="smooth-scroll">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Joshua Frampton Tripp | Portfolio</title>
-
-  <!-- Google Font -->
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Joshua Frampton Tripp | Cybersecurity Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- AOS animations -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <!-- Font Awesome icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <!-- Your custom styles -->
   <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-black text-white">
-
-  <!-- NAV -->
   <nav class="fixed top-0 w-full bg-black bg-opacity-60 backdrop-blur p-4 z-50">
     <ul class="flex justify-end space-x-6">
       <li><a href="#hero" class="hover:text-green-400"><i class="fas fa-home"></i> Home</a></li>
@@ -29,32 +21,26 @@
     </ul>
   </nav>
 
-  <!-- HERO with particle network -->
   <section id="hero" class="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
-    <!-- Particle canvas (behind content) -->
-    <div id="tsparticles" class="absolute inset-0 z-0"></div>
-
-    <!-- Hero content -->
+    <div id="tsparticles" class="absolute inset-0"></div>
     <div class="relative z-10">
       <img src="joshua.png" alt="Joshua Photo" class="w-40 h-40 rounded-full mb-6 shadow-lg mx-auto">
-      <h1 class="text-5xl font-bold mb-2 glow hero-name">Joshua Frampton Tripp</h1>
+      <h1 class="text-5xl font-bold mb-2 glow">Joshua Frampton Tripp</h1>
       <p class="text-xl mb-4">Cybersecurity Enthusiast &amp; A-Level Computer Science Student</p>
       <a href="#contact" class="btn-custom"><i class="fas fa-paper-plane mr-2"></i>Get in touch</a>
     </div>
+    <div class="scroll-indicator"><i class="fas fa-chevron-down fa-2x"></i><span class="ml-2">scroll down</span></div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about" class="py-20 px-6 max-w-3xl mx-auto text-center" data-aos="fade-right">
-    <h2 class="text-4xl font-semibold mb-4 glow section-title">About Me</h2>
+    <h2 class="text-4xl font-semibold mb-4 glow">About Me</h2>
     <p class="leading-relaxed">
-      I’m currently nearing the end of sixth form, and looking for an apprenticeship to start my career in IT. I have a keen interest in IT and hope to specialize in Cyber Security.
-      I’m a hard-working, resilient and honest individual. I am skilled in communication and leadership, and teamwork. I’m charismatic, creative and technically capable.
+      I’m currently nearing the end of sixth form, and looking for an apprenticeship to start my career in IT. I have a keen interest in IT and hope to specialize in Cyber Security. I’m a hard-working, resilient and honest individual. I am skilled in communication and leadership, and teamwork. I’m charismatic, creative and technically capable.
     </p>
   </section>
 
-  <!-- SKILLS -->
   <section id="skills" class="py-20 bg-green-900 bg-opacity-20 px-6" data-aos="fade-left">
-    <h2 class="text-4xl font-semibold text-center mb-12 glow section-title">Key Skills</h2>
+    <h2 class="text-4xl font-semibold text-center mb-12 glow">Key Skills</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
       <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in">
         <i class="fas fa-user text-3xl mb-4 text-green-400"></i>
@@ -74,15 +60,12 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section id="projects" class="py-20 px-6 max-w-5xl mx-auto" data-aos="fade-up">
-    <h2 class="text-4xl font-semibold text-center mb-12 glow section-title">Selected Projects</h2>
+    <h2 class="text-4xl font-semibold text-center mb-12 glow">Selected Projects</h2>
     <div class="space-y-8">
       <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md text-center" data-aos="flip-left">
         <h3 class="text-2xl font-bold mb-2">
-          <a href="https://joshuaframptonunofficial.github.io/BusBeep/" target="_blank" rel="noopener noreferrer" class="hover:text-green-400">
-            BusBeep | Computer Science NEA Project
-          </a>
+          <a href="https://joshuaframptonunofficial.github.io/BusBeep/" target="_blank" class="hover:text-green-400">BusBeep | Computer Science NEA Project</a>
         </h3>
         <p>Built a web-app using HTML, JavaScript and CSS designed to help bus users know when to get off the bus, preventing missed stops.</p>
       </div>
@@ -90,28 +73,30 @@
         <h3 class="text-2xl font-bold mb-2">Photoprism Server | Raspberry Pi NAS</h3>
         <p>Built a Raspberry Pi from various parts and set up a Photo NAS using the open-source PhotoPrismPI Linux distro to avoid Google Photos privacy issues.</p>
       </div>
+	  <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md text-center" data-aos="flip-left">
+        <h3 class="text-2xl font-bold mb-2">
+          <a href="https://joshuaframptonunofficial.github.io/AlphaGroupNotreDame" target="_blank" rel="noopener noreferrer" class="hover:text-green-400">
+            College Media Website | Alpha Group
+          </a>
+        </h3>
+        <p>Built a photo and video sharing site using HTML, JavaScript and CSS designed to allow the members of the trip to access all the photos and videos taken on the tripp</p>
+      </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact" class="py-20 bg-green-900 bg-opacity-20 px-6" data-aos="fade-right">
-    <h2 class="text-4xl font-semibold text-center mb-8 glow section-title">Get In Touch</h2>
+    <h2 class="text-4xl font-semibold text-center mb-8 glow">Get In Touch</h2>
     <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-      <a href="mailto:framptontrippjoshua@gmail.com" class="btn-custom w-full sm:w-auto text-center">
-        <i class="fas fa-envelope mr-2"></i>Email Me
-      </a>
-      <a href="https://www.linkedin.com/in/joshua-frampton-tripp-9499a3283/" class="btn-custom w-full sm:w-auto text-center">
-        <i class="fab fa-linkedin mr-2"></i> LinkedIn
-      </a>
+      <a href="tel:+447305727925" class="btn-custom w-full sm:w-auto text-center"><i class="fas fa-phone mr-2"></i>Call Me</a>
+      <a href="mailto:framptontrippjoshua@gmail.com" class="btn-custom w-full sm:w-auto text-center"><i class="fas fa-envelope mr-2"></i>Email Me</a>
+      <a href="https://www.linkedin.com/in/joshua-frampton-tripp-9499a3283/" class="btn-custom w-full sm:w-auto text-center"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="py-6 text-center bg-black bg-opacity-70">
     <p>© 2025 Joshua. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
