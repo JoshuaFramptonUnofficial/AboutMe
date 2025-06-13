@@ -4,6 +4,33 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Joshua Frampton Tripp | Cybersecurity Portfolio</title>
+  <meta name="description" content="Joshua Frampton Tripp – Cybersecurity enthusiast & A‑Level Computer Science student. Explore my leadership, programming, and hardware projects."/>
+  <meta name="keywords" content="Joshua Frampton Tripp, cybersecurity portfolio, A‑Level Computer Science, leadership, programming, hardware projects"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://joshuaframptontripp.co.uk/"/>
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Joshua Frampton Tripp | Cybersecurity Portfolio"/>
+  <meta property="og:description" content="Explore my leadership, programming, and hardware projects. Cybersecurity enthusiast & A‑Level student."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://joshuaframptontripp.co.uk/"/>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Joshua Frampton Tripp | Cybersecurity Portfolio"/>
+  <meta name="twitter:description" content="Explore my leadership, programming, and hardware projects. Cybersecurity enthusiast & A‑Level student."/>
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Joshua Frampton Tripp",
+    "url": "https://joshuaframptontripp.co.uk/",
+    "jobTitle": "Cybersecurity Enthusiast & A‑Level Computer Science Student",
+    "sameAs": [
+      "https://www.linkedin.com/in/joshua-frampton-tripp-9499a3283/"
+    ]
+  }
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -11,85 +38,89 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-black text-white">
-  <nav class="fixed top-0 w-full bg-black bg-opacity-60 backdrop-blur p-4 z-50">
+  <nav class="fixed top-0 w-full bg-black bg-opacity-60 backdrop-blur p-4 z-50" aria-label="Main navigation">
     <ul class="flex justify-end space-x-6">
-      <li><a href="#hero" class="hover:text-green-400"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="#about" class="hover:text-green-400"><i class="fas fa-user"></i> About</a></li>
-      <li><a href="#skills" class="hover:text-green-400"><i class="fas fa-shield-alt"></i> Skills</a></li>
-      <li><a href="#projects" class="hover:text-green-400"><i class="fas fa-laptop-code"></i> Projects</a></li>
-      <li><a href="#contact" class="hover:text-green-400"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="#hero" class="hover:text-green-400" aria-label="Home section"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+      <li><a href="#about" class="hover:text-green-400" aria-label="About section"><i class="fas fa-user" aria-hidden="true"></i> About</a></li>
+      <li><a href="#skills" class="hover:text-green-400" aria-label="Skills section"><i class="fas fa-shield-alt" aria-hidden="true"></i> Skills</a></li>
+      <li><a href="#projects" class="hover:text-green-400" aria-label="Projects section"><i class="fas fa-laptop-code" aria-hidden="true"></i> Projects</a></li>
+      <li><a href="#contact" class="hover:text-green-400" aria-label="Contact section"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a></li>
     </ul>
   </nav>
 
-  <section id="hero" class="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
-    <div id="tsparticles" class="absolute inset-0"></div>
-    <div class="relative z-10">
-	<h1 class="text-5xl font-bold mb-2 glow">Joshua Frampton Tripp</h1>
-      <p class="text-xl mb-4">Cybersecurity Enthusiast &amp; A-Level Computer Science Student</p>
-      <a href="#contact" class="btn-custom"><i class="fas fa-paper-plane mr-2"></i>Get in touch</a>
-    </div>
-    <div class="scroll-indicator"><i class="fas fa-chevron-down fa-2x"></i><span class="ml-2">scroll down</span></div>
-  </section>
+  <main>
+    <section id="hero" class="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+      <div id="tsparticles" class="absolute inset-0"></div>
+      <div class="relative z-10">
+        <h1 class="text-5xl font-bold mb-2 glow">Joshua Frampton Tripp</h1>
+        <p class="text-xl mb-4">Cybersecurity Enthusiast &amp; A-Level Computer Science Student</p>
+        <a href="#contact" class="btn-custom"><i class="fas fa-paper-plane mr-2" aria-hidden="true"></i>Get in touch</a>
+      </div>
+      <div class="scroll-indicator"><i class="fas fa-chevron-down fa-2x" aria-hidden="true"></i><span class="ml-2">scroll down</span></div>
+    </section>
 
-  <section id="about" class="py-20 px-6 max-w-3xl mx-auto text-center" data-aos="fade-right">
-    <h2 class="text-4xl font-semibold mb-4 glow">About Me</h2>
-    <p class="leading-relaxed">
-      I’m currently nearing the end of sixth form, and looking for an apprenticeship to start my career in IT. I have a keen interest in IT and hope to specialize in Cyber Security. I’m a hard-working, resilient and honest individual. I am skilled in communication and leadership, and teamwork. I’m charismatic, creative and technically capable.
-    </p>
-  </section>
+    <section id="about" class="py-20 px-6 max-w-3xl mx-auto text-center" data-aos="fade-right">
+      <h2 class="text-4xl font-semibold mb-4 glow">About Me</h2>
+      <p class="leading-relaxed">
+        I’m currently nearing the end of sixth form, and looking for an apprenticeship to start my career in IT. I have a keen interest in IT and hope to specialize in Cyber Security. I’m a hard-working, resilient and honest individual. I am skilled in communication and leadership, and teamwork. I’m charismatic, creative and technically capable.
+      </p>
+    </section>
 
-  <section id="skills" class="py-20 bg-green-900 bg-opacity-20 px-6" data-aos="fade-left">
-    <h2 class="text-4xl font-semibold text-center mb-12 glow">Key Skills</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in">
-        <i class="fas fa-user text-3xl mb-4 text-green-400"></i>
-        <h3 class="text-2xl font-bold mb-2">Leadership</h3>
-        <p>I have led an Alpha Group, organised and hosted a college residential and earned the Stellar Marris Gold leadership Award.</p>
+    <section id="skills" class="py-20 bg-green-900 bg-opacity-20 px-6" data-aos="fade-left">
+      <h2 class="text-4xl font-semibold text-center mb-12 glow">Key Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in">
+          <i class="fas fa-user text-3xl mb-4 text-green-400" aria-hidden="true"></i>
+          <h3 class="text-2xl font-bold mb-2">Leadership</h3>
+          <p>I have led an Alpha Group, organised and hosted a college residential and earned the Stellar Marris Gold leadership Award.</p>
+        </div>
+        <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-code text-3xl mb-4 text-green-400" aria-hidden="true"></i>
+          <h3 class="text-2xl font-bold mb-2">Programming</h3>
+          <p>Capable at using C#, CSS, JavaScript, Linux Terminal &amp; HTML.</p>
+        </div>
+        <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-laptop text-3xl mb-4 text-green-400" aria-hidden="true"></i>
+          <h3 class="text-2xl font-bold mb-2">Computer Hardware &amp; Building</h3>
+          <p>I have built several desktop computers and operate a custom-built Raspberry Pi.</p>
+        </div>
       </div>
-      <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
-        <i class="fas fa-code text-3xl mb-4 text-green-400"></i>
-        <h3 class="text-2xl font-bold mb-2">Programming</h3>
-        <p>Capable at using C#, CSS, JavaScript, Linux Terminal &amp; HTML.</p>
-      </div>
-      <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
-        <i class="fas fa-laptop text-3xl mb-4 text-green-400"></i>
-        <h3 class="text-2xl font-bold mb-2">Computer Hardware &amp; Building</h3>
-        <p>I have built several desktop computers and operate a custom-built Raspberry Pi.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects" class="py-20 px-6 max-w-5xl mx-auto" data-aos="fade-up">
-    <h2 class="text-4xl font-semibold text-center mb-12 glow">Selected Projects</h2>
-    <div class="space-y-8">
-      <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md text-center" data-aos="flip-left">
-        <h3 class="text-2xl font-bold mb-2">
-          <a href="https://joshuaframptonunofficial.github.io/BusBeep/" target="_blank" class="hover:text-green-400">BusBeep | Computer Science NEA Project</a>
-        </h3>
-        <p>Built a web-app using HTML, JavaScript and CSS designed to help bus users know when to get off the bus, preventing missed stops.</p>
+    <section id="projects" class="py-20 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+      <h2 class="text-4xl font-semibold text-center mb-12 glow">Selected Projects</h2>
+      <div class="space-y-8">
+        <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md text-center" data-aos="flip-left">
+          <h3 class="text-2xl font-bold mb-2">
+            <a href="https://joshuaframptonunofficial.github.io/BusBeep/" target="_blank" rel="noopener" class="hover:text-green-400">
+              BusBeep | Computer Science NEA Project
+            </a>
+          </h3>
+          <p>Built a web‑app using HTML, JavaScript and CSS designed to help bus users know when to get off the bus, preventing missed stops.</p>
+        </div>
+        <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md text-center" data-aos="flip-left" data-aos-delay="100">
+          <h3 class="text-2xl font-bold mb-2">Photoprism Server | Raspberry Pi NAS</h3>
+          <p>Built a Raspberry Pi from various parts and set up a Photo NAS using the open-source PhotoPrismPI Linux distro to avoid Google Photos privacy issues.</p>
+        </div>
+        <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md text-center" data-aos="flip-left">
+          <h3 class="text-2xl font-bold mb-2">
+            <a href="https://joshuaframptonunofficial.github.io/AlphaGroupNotreDame" target="_blank" rel="noopener noreferrer" class="hover:text-green-400">
+              College Media Website | Alpha Group
+            </a>
+          </h3>
+          <p>Built a photo and video sharing site using HTML, JavaScript and CSS designed to allow the members of the trip to access all the photos and videos taken on the trip.</p>
+        </div>
       </div>
-      <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md text-center" data-aos="flip-left" data-aos-delay="100">
-        <h3 class="text-2xl font-bold mb-2">Photoprism Server | Raspberry Pi NAS</h3>
-        <p>Built a Raspberry Pi from various parts and set up a Photo NAS using the open-source PhotoPrismPI Linux distro to avoid Google Photos privacy issues.</p>
-      </div>
-	  <div class="p-6 bg-black bg-opacity-60 rounded-2xl shadow-md text-center" data-aos="flip-left">
-        <h3 class="text-2xl font-bold mb-2">
-          <a href="https://joshuaframptonunofficial.github.io/AlphaGroupNotreDame" target="_blank" rel="noopener noreferrer" class="hover:text-green-400">
-            College Media Website | Alpha Group
-          </a>
-        </h3>
-        <p>Built a photo and video sharing site using HTML, JavaScript and CSS designed to allow the members of the trip to access all the photos and videos taken on the tripp</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="py-20 bg-green-900 bg-opacity-20 px-6" data-aos="fade-right">
-    <h2 class="text-4xl font-semibold text-center mb-8 glow">Get In Touch</h2>
-    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-	<a href="mailto:info@joshuaframptontripp.co.uk" class="btn-custom w-full sm:w-auto text-center"><i class="fas fa-envelope mr-2"></i>Email Me</a>
-      <a href="https://www.linkedin.com/in/joshua-frampton-tripp-9499a3283/" class="btn-custom w-full sm:w-auto text-center"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
-    </div>
-  </section>
+    <section id="contact" class="py-20 bg-green-900 bg-opacity-20 px-6" data-aos="fade-right">
+      <h2 class="text-4xl font-semibold text-center mb-8 glow">Get In Touch</h2>
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <a href="mailto:info@joshuaframptontripp.co.uk" class="btn-custom w-full sm:w-auto text-center"><i class="fas fa-envelope mr-2" aria-hidden="true"></i>Email Me</a>
+        <a href="https://www.linkedin.com/in/joshua-frampton-tripp-9499a3283/" class="btn-custom w-full sm:w-auto text-center"><i class="fab fa-linkedin mr-2" aria-hidden="true"></i>LinkedIn</a>
+      </div>
+    </section>
+  </main>
 
   <footer class="py-6 text-center bg-black bg-opacity-70">
     <p>© 2025 Joshua. All rights reserved.</p>
